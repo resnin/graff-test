@@ -1,0 +1,21 @@
+.paging {
+    display: flex;
+    gap: 16px;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.arrow {
+    background: transparent;
+    cursor: pointer;
+}
+
+.arrow:disabled {
+    cursor: not-allowed;
+}
+
+@media (max-width: 673px) {
+    .paging {
+        margin-top: 24px;
+    }
+}

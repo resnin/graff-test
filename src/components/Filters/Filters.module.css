@@ -1,0 +1,66 @@
+.filters {
+    background: #22242A;
+    padding: 56px 40px;
+    min-width: 392px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title img {
+    display: none;
+}
+
+.filterItems {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.radioItem {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.radioList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.label {
+    font-size: 14px;
+    color: #C5C7CE;
+}
+
+@media (max-width: 1126px) {
+    .filters {
+        min-width: 265px;
+    }
+}
+
+@media (max-width: 673px) {
+    .filters {
+        display: none;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: fixed;
+        padding: 32px 8px 48px;
+    }
+
+    .title img {
+        display: block;
+    }
+}

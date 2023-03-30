@@ -1,0 +1,63 @@
+.content {
+    margin-top: 60px;
+    max-width: 644px;
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:"A T"
+                        "D L"
+                        "Q Q";
+}
+
+.item {
+    display: flex;
+    gap: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #818798;
+}
+
+.item span {
+    color: #F2F2F2;
+}
+
+.author {
+    grid-area: A;
+}
+
+.tags {
+    grid-area: T;
+}
+
+.dateAdded {
+    grid-area: D;
+}
+
+.length {
+    grid-area: L;
+}
+
+.quote {
+    grid-area: Q;
+    flex-direction: column;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 24px;
+    }
+
+    .quote {
+        gap: 8px;
+    }
+}

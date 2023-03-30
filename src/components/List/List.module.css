@@ -1,0 +1,56 @@
+.list {
+    margin-top: 40px;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.item {
+    padding: 32px;
+    background: #22242A;
+    border-radius: 8px;
+}
+
+.quote {
+    text-decoration: none;
+    color: #F2F2F2;
+    font-weight: 500;
+    font-size: 22px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.subtitle {
+    margin-top: 16px;
+    display: flex;
+    max-width: 396px;
+    justify-content: space-between;
+}
+
+.attribute {
+    color: #818798;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    width: 200px;
+}
+
+.attribute span {
+    color: #F2F2F2;
+}
+
+.nothing {
+    margin-top: 30px;
+    flex-grow: 1;
+}
+
+@media (max-width: 869px) {
+    .subtitle {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+}
